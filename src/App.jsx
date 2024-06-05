@@ -1,14 +1,16 @@
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll bg-gray-100">
-      <div className="snap-start min-h-screen">
+      <Navbar />
+      <div id="Home" className="snap-start min-h-screen">
         <Home />
       </div>
-      <div className="snap-start min-h-screen">
+      <div id="Projects" className="snap-start min-h-screen">
         <Projects />
       </div>
       <div className="snap-start min-h-fit">
