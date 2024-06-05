@@ -48,15 +48,15 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-      <h1 className="text-4xl font-bold tracking-wider text-center pt-8">
+      <h1 className="text-4xl font-bold tracking-wider text-center pt-8 dark:text-gray-200">
         Projects
       </h1>
-      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black" />
+      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black dark:bg-gray-300" />
       <ul className="w-[95%] md:w-[90%] lg:w-[80%] m-auto">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`bg-white lg:flex gap-6 justify-evenly items-center h-full rounded-lg shadow-lg p-4 my-6 ${
+            className={`bg-white dark:bg-gray-800 dark:text-gray-200 lg:flex gap-6 justify-evenly items-center h-full rounded-lg dark:shadow-gray-600 dark:shadow-md shadow-lg p-4 my-6 ${
               project.id % 2 === 0 ? "flex-row-reverse" : ""
             }`}
           >
@@ -71,7 +71,7 @@ const Projects = () => {
               <p className=" text-sm italic">{project.duration}</p>
               <ul className="list-disc list-inside text-justify">
                 {project.desc.map((item) => (
-                  <li>{item}</li>
+                  <li key={item.split(1)}>{item}</li>
                 ))}
               </ul>
               <a

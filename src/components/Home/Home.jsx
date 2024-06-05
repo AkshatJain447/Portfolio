@@ -13,7 +13,7 @@ import {
 
 const PersonalCard = () => {
   return (
-    <div className=" bg-white flex gap-3 flex-col md:flex-row mt-3 lg:flex-col items-center p-4 rounded-xl shadow-xl w-fit">
+    <div className=" bg-white dark:bg-gray-800 dark:text-gray-200 flex gap-3 flex-col md:flex-row mt-3 lg:flex-col items-center p-4 rounded-xl shadow-xl dark:shadow-gray-600 dark:shadow-md  w-fit">
       <img
         src={profPic}
         alt="profilePic"
@@ -25,17 +25,38 @@ const PersonalCard = () => {
         </h1>
         <p className="text-center font-semibold text-xl lg:my-2">Developer</p>
         <div className="flex gap-6 my-3 lg:my-4 text-2xl">
-          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#0077B5] shadow-md">
+          <span
+            className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#0077B5] shadow-md"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/akshat-jain-b016391a6/",
+                "_blank"
+              )
+            }
+          >
             <FaLinkedin className=" hover:scale-110 duration-100" />
           </span>
-          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-slate-700 shadow-md">
+          <span
+            className=" hover:cursor-pointer border p-2 rounded-md hover:text-gray-700 shadow-md"
+            onClick={() =>
+              window.open("https://github.com/AkshatJain447", "_blank")
+            }
+          >
             <FaGithub className=" hover:scale-110 duration-100" />
           </span>
-          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#ee2a7b] shadow-md ">
+          <span
+            className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#ee2a7b] shadow-md"
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/akshat_jain447?igsh=aWMwNm92MmtyYWhv",
+                "_blank"
+              )
+            }
+          >
             <FaInstagram className=" hover:scale-110 duration-100 " />
           </span>
         </div>
-        <ul className=" bg-red-50 rounded-md p-3 shadow-md">
+        <ul className=" bg-red-50 dark:bg-gray-600 dark:text-gray-200 rounded-md p-3 shadow-md">
           <li className="flex gap-2 border-b pb-2 lg:pb-3 ">
             <SiGmail className="text-2xl text-teal-500" />
             <span>akjain9758@gmail.com</span>
@@ -50,7 +71,7 @@ const PersonalCard = () => {
           </li>
         </ul>
         <a href={Resume} download>
-          <button className="flex gap-3 items-center bg-teal-600 p-3 mt-2 lg:mt-4 text-white rounded-lg drop-shadow-lg hover:scale-105 duration-100">
+          <button className="flex gap-3 items-center bg-teal-600 p-3 mt-2 lg:mt-4 text-gray-200 rounded-lg drop-shadow-lg hover:scale-105 duration-100">
             <FaDownload />
             Download CV
           </button>
@@ -63,7 +84,7 @@ const PersonalCard = () => {
 const AboutMe = () => {
   return (
     <div className=" w-[90%] lg:w-[60%] flex flex-col justify-center items-center">
-      <div className="bg-white m-2 shadow-lg rounded-lg p-3 lg:p-6">
+      <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-3 lg:p-6">
         <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
           About Me
         </h2>
@@ -85,7 +106,7 @@ const AboutMe = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row">
-        <div className="bg-white m-2 w-[95%] lg:w-[80%] shadow-lg rounded-lg p-4">
+        <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 w-[95%] lg:w-[80%] shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-4">
           <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
             Skills
           </h2>
@@ -127,7 +148,7 @@ const AboutMe = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-white m-2 shadow-lg rounded-lg p-4">
+        <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-4">
           <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
             Certifications
           </h2>
@@ -146,7 +167,7 @@ const AboutMe = () => {
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row bg-gray-100 justify-center gap-6 items-center h-[100%] lg:h-screen">
+    <div className="flex flex-col lg:flex-row justify-center gap-6 items-center h-[100%] lg:h-screen">
       <PersonalCard />
       <AboutMe />
     </div>
