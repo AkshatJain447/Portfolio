@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll bg-gray-100">
+    <div className="h-screen snap-y snap-proximity scroll-smooth overflow-y-scroll bg-gray-100">
       <Navbar />
       <div id="Home" className="snap-start min-h-screen">
         <Home />
