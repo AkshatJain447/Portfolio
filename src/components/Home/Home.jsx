@@ -1,6 +1,5 @@
 import "./Home.css";
 import profPic from "../../assets/photo.jpg";
-import aboutBg from "../../assets/bg.png";
 import { SiGmail } from "react-icons/si";
 import { FaMapLocationDot } from "react-icons/fa6";
 import {
@@ -92,12 +91,14 @@ const AboutMe = () => {
               </span>
               JavaScript, HTML5, CSS3, C++, Java, SQL, PL/SQL
             </li>
+            <hr className="w-1/2 m-auto" />
             <li className="my-1 skills">
               <span className="font-semibold mr-3 inline-block">
                 Core Concepts:
               </span>
               Data Structures, OOP, Operating Systems, System Design
             </li>
+            <hr className="w-1/2 m-auto" />
             <li className="my-1 skills">
               <span className="font-semibold mr-3 inline-block">
                 Libraries & Frameworks:
@@ -105,12 +106,14 @@ const AboutMe = () => {
               React.js, Redux, Redux Toolkit, Bootstrap, Tailwind CSS, Dnd-Kit,
               Ant Design
             </li>
+            <hr className="w-1/2 m-auto" />
             <li className="my-1 skills">
               <span className="font-semibold mr-3 inline-block">
                 Tools & Platforms:
               </span>
               NPM, Vite, Git, Netlify, Firebase
             </li>
+            <hr className="w-1/2 m-auto" />
             <li className="my-1 skills">
               <span className="font-semibold mr-3 inline-block">
                 Soft Skills:
@@ -138,7 +141,7 @@ const AboutMe = () => {
 
 const Home = () => {
   return (
-    <div className="flex bg-gray-100 justify-center gap-6 items-center h-screen">
+    <div className=" flex bg-gray-100 justify-center gap-6 items-center h-screen">
       <PersonalCard />
       <AboutMe />
     </div>
