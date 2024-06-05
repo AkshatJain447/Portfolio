@@ -40,7 +40,7 @@ const Footer = () => {
     try {
       // Fetch weather based on latitude and longitude
       const responseWeather = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e1954291b049441b0e6499dc9bd4042a`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e1954291b049441b0e6499dc9bd4042a`
       );
       const dataWeather = await responseWeather.json();
       const weatherDescription = dataWeather.weather[0].description;
@@ -62,7 +62,7 @@ const Footer = () => {
   }, [latitude, longitude]);
 
   return (
-    <footer className="flex p-3 justify-between items-center bg-gray-200 text-center">
+    <footer className="flex flex-col md:flex-row p-3 justify-between items-center bg-gray-200 text-center">
       <p className="flex gap-2 items-center text-lg">
         <FaClock />
         {currentTime}

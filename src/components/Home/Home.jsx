@@ -1,5 +1,6 @@
 import "./Home.css";
 import profPic from "../../assets/photo.jpg";
+import Resume from "../../assets/AkshatJain.pdf";
 import { SiGmail } from "react-icons/si";
 import { FaMapLocationDot } from "react-icons/fa6";
 import {
@@ -12,54 +13,58 @@ import {
 
 const PersonalCard = () => {
   return (
-    <div className=" bg-white flex flex-col items-center p-4 rounded-xl shadow-xl w-fit">
+    <div className=" bg-white flex gap-3 flex-col md:flex-row mt-3 lg:flex-col items-center p-4 rounded-xl shadow-xl w-fit">
       <img
         src={profPic}
         alt="profilePic"
         className=" h-60 rounded-xl shadow-lg"
       />
-      <h1 className="text-center font-bold text-3xl mt-4 tracking-wider">
-        Akshat Jain
-      </h1>
-      <p className="text-center font-semibold text-xl my-2">Developer</p>
-      <div className="flex gap-6 my-4 text-2xl">
-        <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#0077B5] shadow-md">
-          <FaLinkedin className=" hover:scale-110 duration-100" />
-        </span>
-        <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-slate-700 shadow-md">
-          <FaGithub className=" hover:scale-110 duration-100" />
-        </span>
-        <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#ee2a7b] shadow-md ">
-          <FaInstagram className=" hover:scale-110 duration-100 " />
-        </span>
+      <div className="flex flex-col items-center">
+        <h1 className="text-center font-bold text-3xl lg:mt-4 tracking-wider">
+          Akshat Jain
+        </h1>
+        <p className="text-center font-semibold text-xl lg:my-2">Developer</p>
+        <div className="flex gap-6 my-3 lg:my-4 text-2xl">
+          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#0077B5] shadow-md">
+            <FaLinkedin className=" hover:scale-110 duration-100" />
+          </span>
+          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-slate-700 shadow-md">
+            <FaGithub className=" hover:scale-110 duration-100" />
+          </span>
+          <span className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#ee2a7b] shadow-md ">
+            <FaInstagram className=" hover:scale-110 duration-100 " />
+          </span>
+        </div>
+        <ul className=" bg-red-50 rounded-md p-3 shadow-md">
+          <li className="flex gap-2 border-b pb-2 lg:pb-3 ">
+            <SiGmail className="text-2xl text-teal-500" />
+            <span>akjain9758@gmail.com</span>
+          </li>
+          <li className="flex gap-2 border-b py-2 lg:py-3 ">
+            <FaMobileAlt className="text-2xl text-blue-700" />
+            <span>+91-7300716447</span>
+          </li>
+          <li className="flex gap-2 pt-2 lg:pt-3">
+            <FaMapLocationDot className="text-2xl text-[#EA4335]" />
+            <span>Saharanpur, UP</span>
+          </li>
+        </ul>
+        <a href={Resume} download>
+          <button className="flex gap-3 items-center bg-teal-600 p-3 mt-2 lg:mt-4 text-white rounded-lg drop-shadow-lg hover:scale-105 duration-100">
+            <FaDownload />
+            Download CV
+          </button>
+        </a>
       </div>
-      <ul className=" bg-red-50 rounded-md p-3 shadow-md">
-        <li className="flex gap-2 border-b pb-3 ">
-          <SiGmail className="text-2xl text-teal-500" />
-          <span>akjain9758@gmail.com</span>
-        </li>
-        <li className="flex gap-2 border-b py-3 ">
-          <FaMobileAlt className="text-2xl text-blue-700" />
-          <span>+91-7300716447</span>
-        </li>
-        <li className="flex gap-2 pt-3">
-          <FaMapLocationDot className="text-2xl text-[#EA4335]" />
-          <span>Saharanpur, UP</span>
-        </li>
-      </ul>
-      <button className="flex gap-3 items-center bg-teal-600 p-3 mt-4 text-white rounded-lg drop-shadow-lg hover:scale-105 duration-100">
-        <FaDownload />
-        Download CV
-      </button>
     </div>
   );
 };
 
 const AboutMe = () => {
   return (
-    <div className="w-[60%] flex flex-col justify-center items-center">
-      <div className="bg-white m-2 shadow-lg rounded-lg p-6">
-        <h2 className=" font-bold text-3xl tracking-wide pb-2 border-b">
+    <div className=" w-[90%] lg:w-[60%] flex flex-col justify-center items-center">
+      <div className="bg-white m-2 shadow-lg rounded-lg p-3 lg:p-6">
+        <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
           About Me
         </h2>
         <p className="text-justify pt-2">
@@ -79,9 +84,9 @@ const AboutMe = () => {
           and continue to grow as a professional.
         </p>
       </div>
-      <div className="flex">
-        <div className="bg-white m-2 w-[80%] shadow-lg rounded-lg p-4">
-          <h2 className=" font-bold text-3xl tracking-wide pb-2 border-b">
+      <div className="flex flex-col md:flex-row">
+        <div className="bg-white m-2 w-[95%] lg:w-[80%] shadow-lg rounded-lg p-4">
+          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
             Skills
           </h2>
           <ul className="pt-2">
@@ -123,7 +128,7 @@ const AboutMe = () => {
           </ul>
         </div>
         <div className="bg-white m-2 shadow-lg rounded-lg p-4">
-          <h2 className=" font-bold text-3xl tracking-wide pb-2 border-b">
+          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
             Certifications
           </h2>
           <ul className=" m-4 pt-2 list-disc">
@@ -141,7 +146,7 @@ const AboutMe = () => {
 
 const Home = () => {
   return (
-    <div className=" flex bg-gray-100 justify-center gap-6 items-center h-screen">
+    <div className="flex flex-col lg:flex-row bg-gray-100 justify-center gap-6 items-center h-[100%] lg:h-screen">
       <PersonalCard />
       <AboutMe />
     </div>
