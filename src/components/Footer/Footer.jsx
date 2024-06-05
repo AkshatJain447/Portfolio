@@ -67,8 +67,8 @@ const Footer = () => {
         <FaClock />
         {currentTime}
       </p>
-      <p>
-        <span className="font-semibold text-lg ">
+      <p className="dark:text-red-400">
+        <span className="font-semibold text-lg dark:text-gray-200">
           Don't hesitate to get in touch
         </span>
         <br />

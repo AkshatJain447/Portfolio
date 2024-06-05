@@ -23,7 +23,9 @@ const PersonalCard = () => {
         <h1 className="text-center font-bold text-3xl lg:mt-4 tracking-wider">
           Akshat Jain
         </h1>
-        <p className="text-center font-semibold text-xl lg:my-2">Developer</p>
+        <p className="text-center font-semibold text-xl lg:my-2 dark:text-red-400">
+          Developer
+        </p>
         <div className="flex gap-6 my-3 lg:my-4 text-2xl">
           <span
             className=" hover:cursor-pointer border p-2 rounded-md hover:text-[#0077B5] shadow-md"
@@ -57,15 +59,15 @@ const PersonalCard = () => {
           </span>
         </div>
         <ul className=" bg-red-50 dark:bg-gray-600 dark:text-gray-200 rounded-md p-3 shadow-md">
-          <li className="flex gap-2 border-b pb-2 lg:pb-3 ">
+          <li className="flex gap-2 border-b pb-2 lg:pb-3 dark:border-red-400">
             <SiGmail className="text-2xl text-teal-500" />
             <span>akjain9758@gmail.com</span>
           </li>
-          <li className="flex gap-2 border-b py-2 lg:py-3 ">
-            <FaMobileAlt className="text-2xl text-blue-700" />
+          <li className="flex gap-2 border-b py-2 lg:py-3 dark:border-red-400">
+            <FaMobileAlt className="text-2xl text-blue-700 dark:text-blue-500" />
             <span>+91-7300716447</span>
           </li>
-          <li className="flex gap-2 pt-2 lg:pt-3">
+          <li className="flex gap-2 pt-2 lg:pt-3 dark:border-red-400">
             <FaMapLocationDot className="text-2xl text-[#EA4335]" />
             <span>Saharanpur, UP</span>
           </li>
@@ -85,7 +87,7 @@ const AboutMe = () => {
   return (
     <div className=" w-[90%] lg:w-[60%] flex flex-col justify-center items-center">
       <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-3 lg:p-6">
-        <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
+        <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-red-400">
           About Me
         </h2>
         <p className="text-justify pt-2">
@@ -107,7 +109,7 @@ const AboutMe = () => {
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 w-[95%] lg:w-[80%] shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-4">
-          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
+          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-red-400">
             Skills
           </h2>
           <ul className="pt-2">
@@ -149,7 +151,7 @@ const AboutMe = () => {
           </ul>
         </div>
         <div className="bg-white dark:bg-gray-800 dark:text-gray-200 m-2 shadow-lg dark:shadow-gray-600 dark:shadow-md  rounded-lg p-4">
-          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b">
+          <h2 className=" font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-red-400">
             Certifications
           </h2>
           <ul className=" m-4 pt-2 list-disc">

@@ -51,7 +51,7 @@ const Projects = () => {
       <h1 className="text-4xl font-bold tracking-wider text-center pt-8 dark:text-gray-200">
         Projects
       </h1>
-      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black dark:bg-gray-300" />
+      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black dark:bg-gray-400" />
       <ul className="w-[95%] md:w-[90%] lg:w-[80%] m-auto">
         {projects.map((project) => (
           <div
@@ -68,7 +68,9 @@ const Projects = () => {
             />
             <div className="p-4">
               <h2 className="font-bold text-lg lg:text-xl">{project.title}</h2>
-              <p className=" text-sm italic">{project.duration}</p>
+              <p className=" text-sm italic dark:text-red-400">
+                {project.duration}
+              </p>
               <ul className="list-disc list-inside text-justify">
                 {project.desc.map((item) => (
                   <li key={item.split(1)}>{item}</li>
@@ -76,7 +78,7 @@ const Projects = () => {
               </ul>
               <a
                 href={project.link}
-                className="italic text-blue-600 hover:scale-105 duration-100 m-auto w-fit mt-3 block"
+                className="italic text-blue-600 dark:text-blue-400 hover:scale-105 duration-100 m-auto w-fit mt-3 block"
                 target="blank"
                 rel="noopener noreferrer"
               >
