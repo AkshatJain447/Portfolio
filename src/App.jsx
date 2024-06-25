@@ -3,7 +3,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import DarkMode from "./components/DarkMode/DarkMode";
-import { motion } from "framer-motion";
 
 function App() {
   return (
