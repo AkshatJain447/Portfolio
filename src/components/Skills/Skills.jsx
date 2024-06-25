@@ -3,7 +3,7 @@ import { IoMdClose } from "react-icons/io";
 const Skills = ({ setIsOpen }) => {
   return (
     <>
-      <h2 className=" flex justify-between items-center font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-accent1 dark:text-secondaryDarkText">
+      <h2 className=" flex justify-between items-center font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-accent1 dark:text-primaryDarkText">
         Skills
         <IoMdClose
           onClick={() => setIsOpen(false)}
