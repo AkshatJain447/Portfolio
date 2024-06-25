@@ -2,6 +2,7 @@ import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import "./Projects.css";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -48,15 +49,23 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-      <h1 className="text-4xl font-bold tracking-wider text-center pt-8 dark:text-gray-200">
+      <motion.h1
+        className="text-4xl font-bold tracking-wider text-center pt-8 dark:text-primaryDarkText"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{
+          duration: 0.4,
+          ease: "easeOut",
+        }}
+      >
         Projects
-      </h1>
-      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black dark:bg-gray-400" />
+      </motion.h1>
+      <hr className="w-1/3 m-auto my-6 h-[2px] bg-black dark:bg-secondaryDarkText" />
       <ul className="w-[95%] md:w-[90%] lg:w-[80%] m-auto">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`bg-white dark:bg-gray-800 dark:text-gray-200 lg:flex gap-6 justify-evenly items-center h-full rounded-lg dark:shadow-gray-600 dark:shadow-md shadow-lg p-4 my-6 ${
+            className={`bg-white dark:bg-card dark:text-primaryDarkText lg:flex gap-6 justify-evenly items-center h-full rounded-lg dark:shadow-gray-700 dark:shadow-md shadow-lg p-4 my-6 ${
               project.id % 2 === 0 ? "flex-row-reverse" : ""
             }`}
           >
@@ -68,10 +77,10 @@ const Projects = () => {
             />
             <div className="p-4">
               <h2 className="font-bold text-lg lg:text-xl">{project.title}</h2>
-              <p className=" text-sm italic dark:text-red-400">
+              <p className=" text-sm italic dark:text-accent1">
                 {project.duration}
               </p>
-              <ul className="list-disc list-inside text-justify">
+              <ul className="list-disc list-inside text-justify dark:text-secondaryDarkText">
                 {project.desc.map((item) => (
                   <li key={item.split(1)}>{item}</li>
                 ))}

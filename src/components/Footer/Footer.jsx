@@ -62,13 +62,13 @@ const Footer = () => {
   }, [latitude, longitude]);
 
   return (
-    <footer className="flex flex-col md:flex-row p-3 justify-between items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-300 text-center">
+    <footer className="flex flex-col md:flex-row p-3 justify-between items-center bg-gray-200 dark:bg-card dark:text-primaryDarkText text-center">
       <p className="flex gap-2 items-center text-lg">
         <FaClock />
         {currentTime}
       </p>
-      <p className="dark:text-red-400">
-        <span className="font-semibold text-lg dark:text-gray-200">
+      <p className="dark:text-accent1">
+        <span className="font-semibold text-lg dark:text-primaryDarkText">
           Don't hesitate to get in touch
         </span>
         <br />
