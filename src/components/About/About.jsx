@@ -27,7 +27,7 @@ const education = [
 const About = ({ setIsOpen }) => {
   return (
     <>
-      <h2 className="flex justify-between items-center font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-accent1 dark:text-secondaryDarkText">
+      <h2 className="flex justify-between items-center font-bold text-2xl lg:text-3xl tracking-wide pb-2 border-b dark:border-accent1 dark:text-primaryDarkText">
         About Me
         <IoMdClose
           onClick={() => setIsOpen(false)}
@@ -50,10 +50,10 @@ const About = ({ setIsOpen }) => {
         engineering position, where I can make a tangible impact and continue to
         grow as a professional.
       </p>
-      <h3 className="font-semibold text-xl lg:text-2xl tracking-wide py-2 border-b dark:border-accent1 dark:text-secondaryDarkText">
+      <h3 className="font-semibold text-xl lg:text-2xl tracking-wide py-2 border-b dark:border-accent1 dark:text-primaryDarkText">
         Education
       </h3>
-      <ul className="px-5 py-1">
+      <ul className="px-5 py-1 dark:text-secondaryDarkText">
         {education.map((edu) => (
           <li key={edu.id} className=" list-disc">
             <h4 className="text-md font-semibold tracking-wide">
