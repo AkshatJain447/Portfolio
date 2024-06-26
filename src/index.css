@@ -5,3 +5,7 @@
 html {
   height: 100vh;
 }
+
+body {
+  scroll-behavior: smooth;
+}

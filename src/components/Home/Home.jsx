@@ -29,7 +29,7 @@ import Skills from "../Skills/Skills";
 const Modal = ({ children }) => {
   return (
     <div
-      className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit bg-white dark:bg-card w-fit z-10 rounded-lg shadow-xl dark:shadow-darkBg p-2 border border-[#dcdcdc81] dark:border-[#4e4d4d81]"
+      className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-fit bg-white dark:bg-card w-[90%] md:w-fit z-10 rounded-lg shadow-xl dark:shadow-darkBg p-2 border border-[#dcdcdc81] dark:border-[#4e4d4d81]"
       id="modal"
     >
       {children}
@@ -136,7 +136,7 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
           and learn from each experience.
         </p>
         <motion.button
-          className="bg-blue-50 text-accent1 rounded-lg -mt-2 py-1 px-3 hover:text-blue-50 hover:bg-accent1 shadow-md float-right duration-100 dark:bg-accent1 dark:text-blue-50"
+          className="bg-blue-50 text-accent1 rounded-lg mt-1 md:-mt-2 py-1 px-3 hover:text-blue-50 hover:bg-accent1 shadow-md float-right duration-100 dark:bg-accent1 dark:text-blue-50"
           whileHover={{ scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{
@@ -146,6 +146,7 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
           onClick={() => {
             setIsOpen(true);
             setModalVal("About");
+            window.scroll({ top: 0, left: 0, behavior: "smooth" });
           }}
         >
           View More
@@ -239,6 +240,7 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
             onClick={() => {
               setIsOpen(true);
               setModalVal("Skills");
+              window.scroll({ top: 0, left: 0, behavior: "smooth" });
             }}
           >
             View More

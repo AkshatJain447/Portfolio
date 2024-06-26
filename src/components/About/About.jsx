@@ -59,10 +59,10 @@ const About = ({ setIsOpen }) => {
             <h4 className="text-md font-semibold tracking-wide">
               {edu.degree}
             </h4>
-            <p className="flex justify-between">
-              <span className="w-[400px]">{edu.institution}</span>
+            <p className="flex flex-col md:flex-row justify-between">
+              <span className="md:w-[400px]">{edu.institution}</span>
               <span>{edu.session}</span>
-              <span className="w-[80px] text-right">{edu.score}</span>
+              <span className="md:w-[80px] md:text-right">{edu.score}</span>
             </p>
           </li>
         ))}
