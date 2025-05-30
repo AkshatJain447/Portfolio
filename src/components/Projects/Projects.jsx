@@ -17,7 +17,7 @@ const projects = [
       "Addressing the underrepresentation of disabled people in government positions, providing a platform to track and apply for job opportunities",
       "Offering training courses tailored to specific job requirements and a supportive community for users",
     ],
-    link: "https://capablecareer.netlify.app/",
+    link: "https://capablecareers.netlify.app/",
   },
   {
     id: 2,
