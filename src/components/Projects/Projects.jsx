@@ -43,7 +43,7 @@ const projects = [
       "Developed several minor projects to reinforce skills in web application development",
       "Completed a major project focusing on Hotel Management System, facilitating room booking and management for prominent local hotels",
     ],
-    link: "https://eventeaseportal.netlify.app",
+    link: "https://akshatjain447.github.io/Event-Booking-Portal/",
   },
 ];
 
