@@ -1,6 +1,6 @@
 import "./Home.css";
 import profPic from "../../assets/photo.png";
-import Resume from "../../assets/AkshatJain.pdf";
+import Resume from "../../assets/Akshat_Jain_Resume.pdf";
 import { SiGmail } from "react-icons/si";
 import { FaMapLocationDot } from "react-icons/fa6";
 import {

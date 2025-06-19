@@ -6,7 +6,7 @@ const education = [
     degree: "Bachelors in Computer Science Engineering",
     institution: "Chandigarh University, Gharuan",
     session: "2021 – 2025",
-    score: "7.98 CGPA",
+    score: "8.08 CGPA",
   },
   {
     id: 2,
