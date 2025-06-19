@@ -1,10 +1,6 @@
 import "./Home.css";
 import profPic from "../../assets/photo.png";
-<<<<<<< HEAD
 import Resume from "../../assets/Akshat_Jain_Resume.pdf";
-=======
-import Resume from "../../assets/Akshat Jain.pdf";
->>>>>>> 412e5420a65817da8ed79ffac34ccd908cc265b3
 import { SiGmail } from "react-icons/si";
 import { FaMapLocationDot } from "react-icons/fa6";
 import {
