@@ -17,7 +17,7 @@ const projects = [
       "Addressing the underrepresentation of disabled people in government positions, providing a platform to track and apply for job opportunities",
       "Offering training courses tailored to specific job requirements and a supportive community for users",
     ],
-    link: "https://capablecareer.netlify.app/",
+    link: "https://capablecareers.netlify.app/",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const projects = [
       "Developed several minor projects to reinforce skills in web application development",
       "Completed a major project focusing on Hotel Management System, facilitating room booking and management for prominent local hotels",
     ],
-    link: "https://akshatjain447.netlify.app/",
+    link: "https://akshatjain447.github.io/Event-Booking-Portal/",
   },
 ];
 
