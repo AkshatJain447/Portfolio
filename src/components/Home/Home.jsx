@@ -12,9 +12,9 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import cIcon from "../../assets/c++.svg";
-import javaIcon from "../../assets/java.svg";
-import htmlIcon from "../../assets/html-1.svg";
-import cssIcon from "../../assets/css-3.svg";
+import sqlIcon from "../../assets/sql.svg";
+import nodeIcon from "../../assets/node.svg";
+import expressIcon from "../../assets/express.svg";
 import jsIcon from "../../assets/logo-javascript.svg";
 import reactIcon from "../../assets/react-2.svg";
 import reduxIcon from "../../assets/redux.svg";
@@ -127,13 +127,13 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
           About Me
         </h2>
         <p className="text-justify pt-2 dark:text-secondaryDarkText">
-          I am an aspiring software engineer with a strong technical background
-          and a passion for solving complex problems. My journey through various
-          academic and personal projects has equipped me with a versatile skill
-          set, including proficiency in multiple programming languages and web
-          development frameworks. In addition to my technical abilities, I value
-          teamwork and adaptability, always striving to collaborate effectively
-          and learn from each experience.
+          I am a dedicated software engineer driven by curiosity and a knack for
+          creative problem-solving. My experiences across diverse academic and
+          hands-on projects have honed my adaptability and broadened my
+          expertise in both frontend and backend web technologies. With a
+          passion for building efficient and elegant solutions, I thrive in
+          collaborative environments and continuously seek opportunities to
+          learn, grow, and contribute as a reliable teammate.
         </p>
         <motion.button
           className="bg-blue-50 text-accent1 rounded-lg mt-1 md:-mt-2 py-1 px-3 hover:text-blue-50 hover:bg-accent1 shadow-md float-right duration-100 dark:bg-accent1 dark:text-blue-50"
@@ -173,20 +173,12 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
                   C++
                 </div>
                 <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
-                  <img src={javaIcon} alt="java" className="h-8" />
-                  JAVA
-                </div>
-                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
-                  <img src={htmlIcon} alt="html" className="h-8" />
-                  HTML
-                </div>
-                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
-                  <img src={cssIcon} alt="css" className="h-8" />
-                  CSS
-                </div>
-                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
                   <img src={jsIcon} alt="js" className="h-8" />
                   Javascript
+                </div>
+                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
+                  <img src={sqlIcon} alt="js" className="h-8" />
+                  SQL
                 </div>
               </div>
             </li>
@@ -203,6 +195,14 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
                   <img src={reduxIcon} alt="redux" className="h-6" />
                   Redux
                 </span>
+                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
+                  <img src={nodeIcon} alt="java" className="h-8" />
+                  Node.js
+                </div>
+                <div className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
+                  <img src={expressIcon} alt="java" className="h-8" />
+                  Express.js
+                </div>
                 <span className="flex justify-between px-2 py-[6px] border border-blue-200 dark:border-accent1 rounded-md dark:text-secondaryDarkText w-full md:w-40 items-center">
                   <img src={tailwindIcon} alt="tailwind css" className="h-5" />
                   Tailwind CSS
@@ -258,6 +258,7 @@ const AboutMe = ({ setIsOpen, setModalVal }) => {
           <ul className=" m-4 pt-2 list-disc dark:text-secondaryDarkText">
             <li>Responsive Web Design: Google</li>
             <li>Introduction to Web Development: IBM</li>
+            <li>FrontEnd Developer (React): Hackerrank</li>
             <li>Discrete Mathematics: NPTEL</li>
             <li>Probability and Statistics: NPTEL</li>
             <li>Front-End Web UI Frameworks and Tools: Coursera</li>

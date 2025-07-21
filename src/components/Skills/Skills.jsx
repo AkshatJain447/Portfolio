@@ -13,34 +13,47 @@ const Skills = ({ setIsOpen }) => {
       <ul className="pt-2 dark:text-secondaryDarkText">
         <li className="my-1 skills">
           <span className="font-semibold mr-3 inline-block">Languages:</span>
-          JavaScript, HTML5, CSS3, C++, Java, SQL, PL/SQL
+          C++, JavaScript (ES6+), HTML5, CSS3, Python, SQL
         </li>
         <hr className="w-1/2 m-auto" />
+
+        <li className="my-1 skills">
+          <span className="font-semibold mr-3 inline-block">
+            Frameworks & Libraries:
+          </span>
+          React.js, Redux, Node.js, Express.js, Tailwind CSS, Dnd-Kit, Ant
+          Design, Axios
+        </li>
+        <hr className="w-1/2 m-auto" />
+
+        <li className="my-1 skills">
+          <span className="font-semibold mr-3 inline-block">Databases:</span>
+          MongoDB, Mongoose, MySQL, Firebase (Realtime DB + Firestore)
+        </li>
+        <hr className="w-1/2 m-auto" />
+
         <li className="my-1 skills">
           <span className="font-semibold mr-3 inline-block">
             Core Concepts:
           </span>
-          Data Structures, OOP, Operating Systems, System Design
+          Data Structures & Algorithms, Object-Oriented Programming (OOP),
+          RESTful APIs, MVC Architecture, Authentication & Authorization, System
+          Design Basics
         </li>
         <hr className="w-1/2 m-auto" />
-        <li className="my-1 skills">
-          <span className="font-semibold mr-3 inline-block">
-            Libraries & Frameworks:
-          </span>
-          React.js, Redux, Redux Toolkit, Bootstrap, Tailwind CSS, Dnd-Kit, Ant
-          Design
-        </li>
-        <hr className="w-1/2 m-auto" />
+
         <li className="my-1 skills">
           <span className="font-semibold mr-3 inline-block">
             Tools & Platforms:
           </span>
-          NPM, Vite, Git, Netlify, Firebase
+          Git & GitHub, Vite, Postman, JWT, Netlify, Render, VS Code, NPM
         </li>
         <hr className="w-1/2 m-auto" />
+
         <li className="my-1 skills">
           <span className="font-semibold mr-3 inline-block">Soft Skills:</span>
-          Teamwork, Adaptability, Problem Solving, Management & Coordination
+          Teamwork, Adaptability, Problem-Solving, Time Management,
+          Communication, Project Coordination
         </li>
       </ul>
     </>

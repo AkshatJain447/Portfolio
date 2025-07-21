@@ -35,20 +35,21 @@ const About = ({ setIsOpen }) => {
         />
       </h2>
       <p className="text-justify pt-2 dark:text-secondaryDarkText px-1">
-        I am an aspiring software engineer with a strong technical background
-        and a passion for solving complex problems. My journey through various
-        academic and personal projects has equipped me with a versatile skill
-        set, including proficiency in multiple programming languages and web
-        development frameworks. In addition to my technical abilities, I value
-        teamwork and adaptability, always striving to collaborate effectively
-        and learn from each experience.
+        I am a passionate software engineer with a solid technical foundation
+        and a curiosity for tackling complex challenges. Through hands-on
+        academic and personal projects, I have built a strong, adaptable skill
+        set—spanning multiple programming languages and modern web development
+        frameworks. My commitment to continuous learning and collaboration
+        allows me to thrive in team environments, where I consistently
+        contribute ideas and embrace new perspectives.
       </p>
       <p className="  text-justify dark:text-secondaryDarkText px-1">
-        Outside of my technical interests, I enjoy gaming, painting, traveling,
-        and reading, which provide a well-rounded perspective and inspire my
-        creativity. I am excited to bring my skills and enthusiasm to a software
-        engineering position, where I can make a tangible impact and continue to
-        grow as a professional.
+        Beyond the screen, I recharge through gaming, painting, travel, and
+        reading. These interests fuel my creativity and provide a balanced
+        outlook that enhances my work as an engineer. I am eager to bring my
+        skills, energy, and diverse experiences to a software engineering role
+        where I can make a meaningful impact and embrace growth as a lifelong
+        learner.
       </p>
       <h3 className="font-semibold text-xl lg:text-2xl tracking-wide py-2 border-b dark:border-accent1 dark:text-primaryDarkText">
         Education

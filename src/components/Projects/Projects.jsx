@@ -8,42 +8,43 @@ import { motion, useAnimation, useInView } from "framer-motion";
 const projects = [
   {
     id: 1,
+    display: project3,
+    title: "EVENTEASE: SMART HOTEL MANAGEMENT SYSTEM",
+    duration: "Web Development Training Project | Apr 2025 - Jun 2025",
+    techStack:
+      "React.js, Redux, Node.js, Express.js, MongoDB, Tailwind CSS, Firebase",
+    desc: [
+      "Engineered a comprehensive hotel and event management platform enabling real-time booking, vendor coordination, and user authentication.",
+      "Streamlined booking workflows for 300+ venues with scalable backend APIs and modular design.",
+      "Implemented responsive, user-centered UIs and collaborated in a fast-paced Agile environment with modern version control practices.",
+    ],
+    link: "https://eventeaseportal.netlify.app/",
+  },
+  {
+    id: 2,
     display: project1,
-    title: "CAPABLE CAREERS: JOB PORTAL FOR DISABLED PEOPLE",
-    duration: "4th rank in Hackathon | Aug 2023 - Sep 2024",
+    title: "CAPABLE CAREERS: JOB PORTAL FOR DISABLED INDIVIDUALS",
+    duration: "4th Rank, HackFusion | Aug 2023 - Sep 2024",
     techStack: "HTML, CSS, JavaScript, React.js, Redux, Tailwind CSS, Firebase",
     desc: [
-      "Leading the development of a website to assist disabled individuals in finding government jobs",
-      "Addressing the underrepresentation of disabled people in government positions, providing a platform to track and apply for job opportunities",
-      "Offering training courses tailored to specific job requirements and a supportive community for users",
+      "Led the creation of an accessible job portal connecting specially-abled talent with government opportunities.",
+      "Developed real-time job listings, personalized career modules, and an intuitive interface empowering 400,000+ potential users.",
+      "Fostered community interaction and inclusive hiring by integrating training resources and skill-building journeys.",
     ],
     link: "https://capablecareers.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     display: project2,
-    title: "PATIENT APPOINTMENT BOOKING",
+    title: "PATIENT APPOINTMENT BOOKING SYSTEM",
     duration: "Hackathon Winner | 7 Oct 2023 – 8 Oct 2023",
     techStack: "HTML, CSS, JavaScript, Tailwind CSS, Java, XML, NFC, Firebase",
     desc: [
-      "Developed a digital solution for appointment booking in government hospitals to reduce overcrowding, long queues, and improve doctor availability",
-      "Created a mobile app for patients to book appointments and track their medical history",
-      "Designed a website for hospitals to manage patient data (Electronic Health Records) and hospital resources efficiently",
+      "Developed a digital solution transforming patient appointments in public hospitals, reducing queues and wait times.",
+      "Built a cross-platform mobile app for seamless appointment booking and tracking of medical records.",
+      "Enabled hospitals to digitally manage EHR and optimize doctor-patient allocation, supporting up to 30,000 daily appointments.",
     ],
     link: "https://patientappointmentbooking.netlify.app/",
-  },
-  {
-    id: 3,
-    display: project3,
-    title: "TEACHNOOK | WEB DEVELOPMENT TRAINING",
-    duration: "June 2023-August 2023",
-    techStack: "HTML, CSS, JavaScript, React.js, Redux, Tailwind CSS, Firebase",
-    desc: [
-      "Studied and practiced web development utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js)",
-      "Developed several minor projects to reinforce skills in web application development",
-      "Completed a major project focusing on Hotel Management System, facilitating room booking and management for prominent local hotels",
-    ],
-    link: "https://eventeaseportal.netlify.app/",
   },
 ];
 
